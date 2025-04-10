@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/output.css" />
     <title>Password Strength</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="h-[100vh] w-full bg-[#201f21] flex items-center justify-center">
+      <div class="w-[400px] max-w-[90%] relative">
+        <input
+          class="placeholder:text-[15px] w-full h-[60px] py-0 px-5 border-[1px] border-[#ccc] outline-none text-white bg-transparent"
+          type="password"
+          name=""
+          placeholder="Password"
+          id="password"
+        />
+        <button
+          class="bg-transparent border-0 outline-none rounded-[50%] cursor-pointer absolute -top-[10%] right-[15px] transform translate-y-1/2"
+          type="submit"
+        >
+          <img src="/images/arrow.png" width="35px" alt="" />
+        </button>
+        <p id="msg" class="absolute -bottom-[30px] text-white text-[15px] ">Password is <span id="Strength"></span></p>
+      </div>
+    </div>
+  </body>
 </html>
